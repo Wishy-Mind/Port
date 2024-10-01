@@ -1,0 +1,354 @@
+:root {
+    --primary-color: rgb(132, 0, 255);
+    /* Define your primary color */
+    --secondary-color: rgb(52, 0, 100);
+    /* Define your secondary color */
+    --background-color: rgb(39, 39, 39);
+    /* Define your background color */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.WM{
+    background-image: url(Image/Screenshot_2024-10-01_100608-removebg-preview.png);
+    background-size: cover;
+    margin-top: 60px;
+    height: 80px;
+    width: 80px;
+}
+
+body {
+    background-color: rgb(40, 40, 40);
+}
+
+.myself-wishy-mind {
+    width: 100%;
+    height: 900px;
+
+    border-top: 3px solid rgb(20, 20, 20);
+    border-bottom: 3px solid rgb(20, 20, 20);
+
+    background-color: rgb(230, 230, 230);
+    /* box-shadow: inset 0px 10px 60px 0px rgb(40, 40, 40), inset 0px -10px 60px 0px rgb(40, 40, 40); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myself-wishy-mind .container {
+    padding: 10px 70px;
+    margin-top: 30px;
+
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(230, 230, 230);
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+
+    grid-gap: 10px;
+}
+
+.cantain {
+    border-radius: 20px;
+}
+
+.myself-wishy-mind .container .cantain1 {
+    grid-area: 1 / 1 / 6 / 4;
+    background-color: white;
+    overflow: hidden;
+}
+
+.myself-wishy-mind .container .cantain1 .Logo-contain {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 310px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.myself-wishy-mind .container .cantain1 .rotatingDiv {
+    width: 1000px;
+    height: 1000px;
+
+    background-image: url(Image/_07d1a617-61b1-4277-81b1-f829f18c7ce0.jfif);
+    /* repeating-radial-gradient(circle at top right, rgb(0, 0, 0),rgba(0, 0, 0, 0) 20%),
+    repeating-radial-gradient(circle at bottom left,var(--primary-color),rgba(0, 0, 0, 0) 30%),
+    repeating-radial-gradient(ellipse at top left,var(--secondary-color),rgba(0, 0, 0, 0) 20%),
+    repeating-radial-gradient(ellipse at bottom right, rgb(0, 0, 0),rgba(0, 0, 0, 0) 30%); */
+    background-size: cover;
+    background-position: center;
+
+    transition: 1s;
+    animation-name: highy;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes highy {
+    0% {
+        rotate: 36deg;
+    }
+
+    100% {
+        rotate: -36deg;
+    }
+}
+
+.myself-wishy-mind .container .cantain1 .Logo-contain h1 {
+    margin-top: 100px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    background-color: white;
+
+    background: linear-gradient(0deg, var(--primary-color), rgb(0, 0, 0));
+    /* Example linear gradient */
+    -webkit-background-clip: text;
+    /* Apply gradient to text */
+    -webkit-text-fill-color: transparent;
+    /* Make text transparent */
+}
+
+.myself-wishy-mind .container .cantain2 {
+    grid-area: 1 / 4 / 3 / 11;
+
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(56, 56, 56, 0.438)), url(Image/_07d1a617-61b1-4277-81b1-f829f18c7ce0.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.myself-wishy-mind .container .cantain2 .contain-sentiments {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.myself-wishy-mind .container .cantain2 .contain-sentiments div {
+    /* background-image: linear-gradient(20deg, var(--primary-color), rgb(255, 255, 255) 30%); */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    margin-right: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+    text-transform: uppercase;
+    padding: 7px;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.myself-wishy-mind .container .cantain2 h1 {
+    width: 100%;
+    /* min-height: 200px; */
+
+    color: rgb(255, 255, 255);
+    padding-left: 50px;
+    padding-top: 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.myself-wishy-mind .container .cantain2 h1 span {
+    width: 100%;
+    /* min-height: 200px; */
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.myself-wishy-mind .container .cantain3 {
+    grid-area: 1 / 11 / 4 / 12;
+
+    background-color: rgb(35, 35, 35);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.myself-wishy-mind .container .cantain3 h1 {
+    color: white;
+}
+
+.myself-wishy-mind .container .cantain3 h1 span {
+    background: linear-gradient(360deg, var(--primary-color), var(--secondary-color));
+    /* Example linear gradient */
+    -webkit-background-clip: text;
+    /* Apply gradient to text */
+    -webkit-text-fill-color: transparent;
+    /* Make text transparent */
+}
+
+
+
+.myself-wishy-mind .container .cantain3 p {
+    color: white;
+
+    font-size: 12px;
+    padding: 0px 40px;
+    text-align: justify;
+}
+
+.myself-wishy-mind .container .cantain4 {
+    grid-area: 3 / 6 / 4 / 11;
+
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 30px;
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: justify;
+}
+
+
+
+.myself-wishy-mind .container .cantain5 {
+    grid-area: 3 / 4 / 6 / 6;
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myself-wishy-mind .container .cantain5 .icons{
+    display: grid;
+    grid-template-columns: 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+
+    grid-gap: 15px;
+
+    /* background-color: rgb(100, 100, 255); */
+    min-width: 60px;
+    min-height: 90px;
+}
+
+.myself-wishy-mind .container .cantain5 .icons div{
+    width: 30px;
+    height: 30px;
+
+    /* background-color: rgb(49, 49, 49); */
+}
+
+.myself-wishy-mind .container .cantain5 .icons .F{
+    background-image: url(Icon/facebook.png);
+    background-size: cover;
+}
+.myself-wishy-mind .container .cantain5 .icons .Y{
+    background-image: url(Icon/youtube.png);
+    background-size: cover;
+}
+.myself-wishy-mind .container .cantain5 .icons .I{
+    background-image: url(Icon/linkedin.png);
+    background-size: cover;
+}
+.myself-wishy-mind .container .cantain5 .icons .In{
+    background-image: url(Icon/instagram.png);
+    background-size: cover;
+}
+.myself-wishy-mind .container .cantain5 .icons .Gi{
+    background-image: url(Icon/github.png);
+    background-size: cover;
+}
+.myself-wishy-mind .container .cantain5 .icons .G{
+    background-image: url(Icon/new.png);
+    background-size: cover;
+}
+
+.myself-wishy-mind .container .cantain6 {
+    grid-area: 6 / 1 / 8 / 11;
+
+    background-color: rgb(35, 35, 35);
+}
+
+
+
+/* Width */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    padding: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(230, 230, 230); /* Color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(45, 45, 45); /* Color of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(45, 45, 45); /* Color of the handle on hover */
+  }
+  
+  /* Corner */
+  ::-webkit-scrollbar-corner {
+    background: transparent; /* Color of the corner (where the vertical and horizontal scrollbars meet) */
+  }
+  
+  /* Resizer */
+  ::-webkit-resizer {
+    background: rgb(45, 45, 45); /* Color of the resizer */
+  }
+  
+
+  #scrollingDiv {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 52%;
+    left: 45%;
+  }
+  
+  .letter {
+    opacity: 0;
+    color: rgb(30, 30, 30);
+    transition: opacity 0.3s ease-in-out, color 2s ease-in-out;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+  }
